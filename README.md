@@ -3,6 +3,8 @@
 ## :book: Descrição
 *Cabbage* é um gerenciador de janelas e renderizador 2D de código aberto gravado em C++.
 
+:green_salad: *Cabbage* faz parte do ecossistema *Salad* :green_salad:
+
 ## :dart: Objetivo:
 Fornecer uma API simples de utilizar na hora de implementar funcionalidades de desenho em programas em C++.
 
@@ -40,3 +42,11 @@ Biblioteca gráfica utilizada para implementar a API. Caso não possua a ferrame
 ## :x: Problemas
 - Caso não consiga executar algum comando ou não consiga abrir a janela do projeto, verifique se as dependências foram corretamente instaladas.
 - Caso tenha algum erro de execução, sinta-se à vontade para criar uma nova [**issue**](https://github.com/Gaizgrol/Cabbage/issues) no projeto. 
+
+## 🥗 Ecossistema *Salad*:
+- 🥬 *Cabbage*: https://github.com/Gaizgrol/Cabbage
+- 🥕 *Carrot*: https://github.com/Gaizgrol/Carrot
+- 🥦 *Cauliflower*: `// Em breve...`
+- 🥒 *Cucumber*: `// Em breve...`
+- 🌶️ *Chili*: `// Em breve...`
+- 🌽 *Corn*: `// Em breve...`
