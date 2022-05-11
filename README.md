@@ -21,6 +21,8 @@ Legenda - 🟢: Feito 🔶: Em andamento 🟥: Não iniciado
 Compilador de C++ da GNU, versão compatível com o padrão C++17. Baixe do site oficial: https://gcc.gnu.org/;
 - ### make:
 Ferramenta para controlar a criação e limpeza dos arquivos executáveis usados neste projeto. Para Windows, o MinGW já possui o make e geralmente distribuições Linux já vem com a ferramenta instalada. Caso não possua a ferramenta, baixe do site oficial: https://www.gnu.org/software/make/;
+- ### Linux ou Windows: Git Bash
+Alguns comandos do `makefile` são de sistemas Linux (por exemplo, o comando `find`). Por isso, recomendamos que utilize um sistema Linux ou o Git Bash no Windows, dado que o mesmo vem com algumas ferramentas utilizadas já instaladas;
 - ### GLFW:
 Biblioteca gráfica utilizada para implementar a API. Caso não possua a ferramenta, baixe do site oficial: https://www.glfw.org
 
