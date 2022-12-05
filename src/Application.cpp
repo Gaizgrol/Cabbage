@@ -4,9 +4,9 @@
 
 using namespace cbg;
 
-Application::Application() {
-    _windows = std::unordered_map<WindowID, Window*>{};
-
+Application::Application()
+    : _windows{}
+{
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -31,12 +31,12 @@ auto Application::closeWindow(WindowID id) -> bool {
     if (result == _windows.end()) {
         return false;
     }
-    
-    _windows.erase(result);
 
-    auto window = &(result->second);
-    *window = nullptr;
-    delete (*window);
+    auto& windowPtrRef = result->second;
+    delete windowPtrRef;
+    windowPtrRef = nullptr;
+
+    result = _windows.erase(result);
 
     return true;
 }
@@ -49,6 +49,8 @@ auto Application::getWindow(WindowID id) -> Window* {
 
     return result->second;
 };
+
+#include <iostream>
 
 auto Application::main() -> void {
     for (const auto& entry : _windows) {
