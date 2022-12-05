@@ -1,3 +1,4 @@
+#include <chrono>
 #include <iostream>
 #include "Application.hpp"
 
@@ -20,8 +21,15 @@ auto main() -> int {
         cout << "Tamanho da janela " << e.window->id << ": " << width << " x " << height << endl;
     });
 
+
     while (true) {
+        auto start = chrono::high_resolution_clock::now();
         app.main();
+        cout <<
+            chrono::duration_cast<chrono::milliseconds>(
+                chrono::high_resolution_clock::now() - start
+            )
+        << endl;
     }
 
     return 0;
